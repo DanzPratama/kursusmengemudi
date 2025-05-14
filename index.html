@@ -142,11 +142,13 @@ body {
   
 
   <!-- Hero -->
-  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('./danz-img/bg.jpg');">
-    <div class="absolute inset-0 bg-black opacity-60"></div>
+  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('./danz-img/bg2.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+
+
+    <div class="absolute inset-0 bg-black opacity-30"></div>
     <div class="relative z-10 text-center text-white px-6">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Belajar Mengemudi Mudah dan Efektif</h2>
-      <p class="text-lg md:text-xl mb-6">Bersama Lpk Kurnia Dewi Jadi lah pelopor pengemudi yang handal</p>
+      <!-- <h2 class="text-4xl md:text-6xl font-bold mb-4">Belajar Mengemudi Mudah dan Efektif</h2>
+      <p class="text-lg md:text-xl mb-6">Bersama Lpk Kurnia Dewi Jadi lah pelopor pengemudi yang handal</p> -->
       <a href="#paket" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl transition">Lihat Paket Kursus</a>
     </div>
   </section>
@@ -251,73 +253,88 @@ body {
       <h3 class="text-3xl font-bold text-center text-orange-600 mb-10">Materi Pelatihan</h3>
       <div class="grid md:grid-cols-3 gap-8">
   
+        <!-- Teori & Praktek Langsung -->
         <div class="bg-orange-100 p-6 rounded-xl shadow hover:shadow-lg transition">
           <div class="flex items-center gap-3 mb-2 text-orange-700">
-            <!-- Ikon -->
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M9 17v-6h13v6M5 10v10a1 1 0 001 1h3m10-1a1 1 0 001-1v-6m-6 0v-4a4 4 0 00-8 0v4"></path>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 17h16M4 13h16M4 9h16M4 5h16"></path>
             </svg>
             <h4 class="text-xl font-semibold">Teori & Praktek Langsung</h4>
           </div>
           <p>Belajar teori dan praktek langsung di jalan untuk pengalaman nyata.</p>
         </div>
   
+        <!-- Belajar Belok -->
         <div class="bg-green-100 p-6 rounded-xl shadow hover:shadow-lg transition">
           <div class="flex items-center gap-3 mb-2 text-green-700">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M15 19l-7-7 7-7"></path>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v2m8-6l4 4-4 4"></path>
             </svg>
             <h4 class="text-xl font-semibold">Belajar Belok</h4>
           </div>
           <p>Menguasai teknik belok yang benar di berbagai situasi jalan.</p>
         </div>
   
+        <!-- Track Jalan -->
         <div class="bg-blue-100 p-6 rounded-xl shadow hover:shadow-lg transition">
           <div class="flex items-center gap-3 mb-2 text-blue-700">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M3 10h18M3 14h18M3 18h18"></path>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v20m6-10H6"></path>
             </svg>
             <h4 class="text-xl font-semibold">Track Jalan</h4>
           </div>
           <p>Latihan di berbagai jenis track untuk mengasah kemampuan mengemudi.</p>
         </div>
   
+        <!-- Macet di Tanjakan -->
         <div class="bg-purple-100 p-6 rounded-xl shadow hover:shadow-lg transition">
           <div class="flex items-center gap-3 mb-2 text-purple-700">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M12 8v4l3 3m5-1a9 9 0 11-6.219-8.56"></path>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8"></path>
             </svg>
             <h4 class="text-xl font-semibold">Macet di Tanjakan</h4>
           </div>
           <p>Latihan menghadapi kemacetan di tanjakan dengan teknik yang tepat.</p>
         </div>
   
+        <!-- Parkir -->
         <div class="bg-pink-100 p-6 rounded-xl shadow hover:shadow-lg transition">
           <div class="flex items-center gap-3 mb-2 text-pink-700">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7h3a3 3 0 010 6h-3"></path>
             </svg>
             <h4 class="text-xl font-semibold">Parkir</h4>
           </div>
           <p>Belajar teknik parkir yang benar di berbagai situasi.</p>
         </div>
   
+        <!-- Jadwal Kursus Fleksibel -->
         <div class="bg-yellow-100 p-6 rounded-xl shadow hover:shadow-lg transition">
           <div class="flex items-center gap-3 mb-2 text-yellow-700">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M9.75 3v2.25m4.5-2.25v2.25M3 9h18M4.5 21h15a1.5 1.5 0 001.5-1.5V8.25A1.5 1.5 0 0019.5 6.75h-15A1.5 1.5 0 003 8.25v11.25A1.5 1.5 0 004.5 21z"></path>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8 7V3m8 4V3m-9 8h10m-5 4h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
             <h4 class="text-xl font-semibold">Jadwal Kursus Fleksibel</h4>
           </div>
           <p>Jadwal kursus bisa disesuaikan dengan waktu luang anda.</p>
         </div>
   
+        <!-- Promo -->
         <div class="bg-teal-100 p-6 rounded-xl shadow hover:shadow-lg transition">
           <div class="flex items-center gap-3 mb-2 text-teal-700">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M3 11l8.293 8.293a1 1 0 001.414 0L21 9.999V3H14L3 11z" />
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 9V7a4 4 0 10-8 0v2m-2 0h12l1 11H4l1-11z" />
             </svg>
-            <h4 class="font-semibold text-base">Promo</h4>
+            <h4 class="text-xl font-semibold">Promo</h4>
           </div>
           <p>Dapatkan Promo Terbaik Biaya Kursus...</p>
         </div>
@@ -325,6 +342,7 @@ body {
       </div>
     </div>
   </section>
+  
   
 
 <!-- Paket -->
@@ -374,21 +392,21 @@ body {
         <div class="kursus-card kursus-card-1">
           <h3 class="kursus-title">Kursus Pemula</h3>
           <p class="kursus-desc">Belajar mengemudi dari dasar dengan instruktur berpengalaman. Cocok untuk Anda yang baru pertama kali belajar mengemudi.</p>
-          <a href="#" class="kursus-btn">Daftar Sekarang</a>
+          <a href="daftar-online.html" class="kursus-btn">Daftar Sekarang</a>
         </div>
 
         <!-- Kursus Lanjutan -->
         <div class="kursus-card kursus-card-2">
           <h3 class="kursus-title">Kursus Lanjutan</h3>
           <p class="kursus-desc">Tingkatkan kemampuan mengemudi Anda dengan teknik yang lebih kompleks. Program ini dirancang untuk mereka yang sudah memiliki pengalaman dasar mengemudi.</p>
-          <a href="#" class="kursus-btn">Daftar Sekarang</a>
+          <a href="daftar-online.html" class="kursus-btn">Daftar Sekarang</a>
         </div>
 
         <!-- Kursus Profesional -->
         <div class="kursus-card kursus-card-3">
           <h3 class="kursus-title">Kursus Profesional</h3>
           <p class="kursus-desc">Persiapkan diri Anda untuk menjadi pengemudi profesional dengan pelatihan intensif. Program ini cocok bagi yang ingin menguasai teknik mengemudi tingkat lanjut.</p>
-          <a href="#" class="kursus-btn">Daftar Sekarang</a>
+          <a href="daftar-online.html" class="kursus-btn">Daftar Sekarang</a>
         </div>
       </div>
     </div>
