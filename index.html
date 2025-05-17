@@ -139,29 +139,110 @@ body {
       </ul>
     </div>
   </nav>
-  
+  <section class="w-full">
+  <!-- Gambar dan Judul -->
+  <div class="relative pt-20">
+  <img src="./danz-img/bg2.jpg" alt="Kursus Mengemudi"
+       class="background-size: contain; background-position: center; background-repeat: no-repeat; w-full h-50 object-cover" />
 
-  <!-- Hero -->
-  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('./danz-img/bg2.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+  <div class="absolute bottom-4 left-4 flex space-x-4">
+    <a href="#paket">
+      <div class="rounded-xl transition bg-white text-black text-2xl font-bold px-4 py-2 hover:bg-gray-200 cursor-pointer">
+        Lihat Paket
+      </div>
+    </a>
+
+    <!-- Tombol Play Video -->
+<button
+  id="play-video-btn"
+  class="rounded-full border-2 border-white bg-transparent text-white w-12 h-12 flex items-center justify-center cursor-pointer shadow-lg"
+  aria-label="Play Video"
+>
+  <!-- Icon play (segitiga) -->
+  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M8 5v14l11-7z" />
+  </svg>
+</button>
+
+  </div>
+</div>
+
+<!-- Informasi Layanan -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-900 p-6 rounded-xl">
+  <div class="flex items-start space-x-2 bg-orange-700 p-3 rounded-lg shadow-sm">
+    <span class="text-white font-bold">✔</span>
+    <p class="text-white leading-tight m-0">Instruktur bersertifikat dan amanah</p>
+  </div>
+  <div class="flex items-start space-x-2 bg-yellow-700 p-3 rounded-lg shadow-sm">
+    <span class="text-white font-bold">✔</span>
+    <p class="text-white leading-tight m-0">Hari dan Waktu disesuaikan dengan Keinginan Anda</p>
+  </div>
+  <div class="flex items-start space-x-2 bg-lime-700 p-3 rounded-lg shadow-sm">
+    <span class="text-white font-bold">✔</span>
+    <p class="text-white leading-tight m-0">Bisa Latihan di Area Jalan Dekat Rumah Anda</p>
+  </div>
+  <div class="flex items-start space-x-2 bg-green-700 p-3 rounded-lg shadow-sm">
+    <span class="text-white font-bold">✔</span>
+    <p class="text-white leading-tight m-0">Mobil yang Bersih, Wangi, dan Nyaman</p>
+  </div>
+  <div class="flex items-start space-x-2 bg-teal-700 p-3 rounded-lg shadow-sm">
+    <span class="text-white font-bold">✔</span>
+    <p class="text-white leading-tight m-0">Menyediakan Layanan Jemput Antar ke Rumah</p>
+  </div>
+  <div class="flex items-start space-x-2 bg-blue-700 p-3 rounded-lg shadow-sm">
+    <span class="text-white font-bold">✔</span>
+    <p class="text-white leading-tight m-0">Instruktur Berpengalaman, Ramah, dan Cekatan</p>
+  </div>
+  <div class="flex items-start space-x-2 bg-purple-700 p-3 rounded-lg shadow-sm">
+    <span class="text-white font-bold">✔</span>
+    <p class="text-white leading-tight m-0">Pelatihan sistem private, satu siswa + satu mobil (TIDAK ROMBONGAN)</p>
+  </div>
+</div>
 
 
-    <div class="absolute inset-0 bg-black opacity-30"></div>
-    <div class="relative z-10 text-center text-white px-6">
-      <!-- <h2 class="text-4xl md:text-6xl font-bold mb-4">Belajar Mengemudi Mudah dan Efektif</h2>
-      <p class="text-lg md:text-xl mb-6">Bersama Lpk Kurnia Dewi Jadi lah pelopor pengemudi yang handal</p> -->
-      <a href="#paket" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl transition">Lihat Paket Kursus</a>
-    </div>
-  </section>
+<!-- Modal embed YouTube (hidden by default) -->
+<div id="video-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+  <div class="bg-white rounded-lg p-4 max-w-3xl w-full relative">
+    <button id="close-modal" class="absolute top-2 right-2 text-black text-2xl font-bold cursor-pointer">&times;</button>
+    <iframe
+      id="youtube-embed"
+      width="100%"
+      height="720"
+      src="https://www.youtube.com/embed/vkL7LmcubyQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
+
+<script>
+  const playBtn = document.getElementById('play-video-btn');
+  const modal = document.getElementById('video-modal');
+  const closeBtn = document.getElementById('close-modal');
+
+  playBtn.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.add('hidden');
+  });
+
+  // Optional: close modal when clicking outside video
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+</script>
+
   
 
   <!-- Tentang -->
-  <section id="tentang" class="py-16 bg-gray-50" data-aos="fade-up" data-aos-duration="1000">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold text-orange-600 mb-4">Tentang Kami</h3>
-      <p class="text-lg">LPK Kurnia Dewi 88 adalah lembaga pelatihan terpercaya sejak tahun 2004 ..
-        Dengan Mobil manual dan Matic yg aman, mengemudi terpercaya di Singaparna,Tasikmalaya dengan instruktur bersertifikat dan mobil yang aman.</p>
-    </div>
-  </section>
+
+
 
   <!-- Visi dan Misi -->
 <section id="visi-misi" class="py-20 bg-gray-100" data-aos="fade-up" data-aos-duration="1000">
